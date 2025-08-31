@@ -15,6 +15,7 @@
   },
   "scripts": {
     "build": "tsc",
+    "postinstall": "npm install -g tsx",
     "start": "tsx index.ts"
   },
   "devDependencies": {
