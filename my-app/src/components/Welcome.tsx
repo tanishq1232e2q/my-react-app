@@ -22,7 +22,7 @@ export default function Welcome() {
 
     const authUser = async () => {
         try {
-            const response = await fetch("http://localhost:5000/getuser", {
+            const response = await fetch("https://my-react-app-backend-vgk4.onrender.com/getuser", {
                 method: "GET",
                 headers: {
                     Authorization: `Bearer ${token}`,
@@ -38,7 +38,7 @@ export default function Welcome() {
 
     const fetchNotes = async () => {
         try {
-            const res = await fetch("http://localhost:5000/notes", {
+            const res = await fetch("https://my-react-app-backend-vgk4.onrender.com/notes", {
                 method: "GET",
                 headers: { Authorization: `Bearer ${token}` },
             });
@@ -52,7 +52,7 @@ export default function Welcome() {
     const addNote = async () => {
         if (!note.content) return alert("Add something to note ");
 
-        const res = await fetch("http://localhost:5000/notes", {
+        const res = await fetch("https://my-react-app-backend-vgk4.onrender.com/notes", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -66,7 +66,7 @@ export default function Welcome() {
     };
 
     const deleteNote = async (id: string) => {
-        await fetch(`http://localhost:5000/notes/${id}`, {
+        await fetch(`https://my-react-app-backend-vgk4.onrender.com/notes/${id}`, {
             method: "DELETE",
             headers: { Authorization: `Bearer ${token}` },
         });
