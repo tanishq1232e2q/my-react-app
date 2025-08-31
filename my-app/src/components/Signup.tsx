@@ -1,9 +1,9 @@
 // SignupForm.jsx
-import React, { use, useState } from "react";
+import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "../App.css"
-import { Navigate } from "react-router-dom";
-import { set } from "mongoose";
+
+
 export default function SignupForm() {
     const [form, setForm] = useState({
         name: "",
@@ -15,17 +15,13 @@ export default function SignupForm() {
     });
     const navi=useNavigate()
 
-      const [message, setMessage] = useState("");
+    
       
 
 
     const [hideOtp, setHideOtp] = useState(true);
 
-    interface SignupFormState {
-        name: string;
-        dob: string;
-        email: string;
-    }
+  
 
     interface SignupFormEvent extends React.ChangeEvent<HTMLInputElement> {}
 
