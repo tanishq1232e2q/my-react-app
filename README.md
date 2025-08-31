@@ -5,6 +5,6 @@ A simple Note making app using frontend and backend techologies the features are
 * After token verification user can add and delete their notes
 
 Teck Stack-
-Frontend- Reactjs(TypeScript)
-Bcakend- Nodejs, Expressjs
-Database- MongoDB
+* Frontend- Reactjs(TypeScript)
+* Backend- Nodejs, Expressjs
+* Database- MongoDB
