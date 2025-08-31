@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "../App.css"
-import { set } from "mongoose";
+
 export default function Login() {
     const [form, setForm] = useState({
         
@@ -19,13 +19,8 @@ export default function Login() {
       const [message, setMessage] = useState("");
 
 
-    const [hideOtp, setHideOtp] = useState(true);
 
-    interface SignupFormState {
-        name: string;
-        dob: string;
-        email: string;
-    }
+   
 
     interface SignupFormEvent extends React.ChangeEvent<HTMLInputElement> {}
 
