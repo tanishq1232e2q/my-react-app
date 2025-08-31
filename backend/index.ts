@@ -22,6 +22,10 @@ mongoose
   .catch((err) => console.log(err));
 
 app.use(cors());
+app.use(cors({
+  origin: "https://my-react-app-eefp.vercel.app", 
+  credentials: true
+}));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
