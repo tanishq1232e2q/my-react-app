@@ -39,7 +39,7 @@ export default function SignupForm() {
         }
         
 
-        const response=await fetch("http://localhost:5000/signup", {
+        const response=await fetch("https://my-react-app-backend-vgk4.onrender.com/signup", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -73,7 +73,7 @@ export default function SignupForm() {
             return;
         }
         setHideOtp(false)
-        const response=await fetch("http://localhost:5000/send-otp", {
+        const response=await fetch("https://my-react-app-backend-vgk4.onrender.com/send-otp", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
