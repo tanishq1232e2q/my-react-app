@@ -15,7 +15,8 @@ export default function SignupForm() {
     });
     const navi=useNavigate()
 
-    
+    const [message, setMessage] = useState<string>('');
+
       
 
 
